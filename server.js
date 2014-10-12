@@ -25,7 +25,7 @@ app.get('/', function (req, res) {
 io.sockets.on('connection', function (socket) {
 
   // Emit a message to send it to the client.
-  socket.emit('ping', { msg: 'Hello. I know socket.io.' });
+  socket.emit('ping', { msg: 'Buenas. Funcionando con socket.io.' });
 
   // Print messages from the client.
   socket.on('pong', function (data) {
